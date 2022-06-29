@@ -1,0 +1,183 @@
+#swapClock {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  height: 25px;
+  width: calc(250px + 5%);
+  background-color: rgb(196, 178, 155);
+  top: 0;
+  bottom: 35%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  border: 1px solid rgb(196, 178, 155);
+}
+
+#bar {
+  background-color: white;
+  border-radius: 3px;
+  position: absolute;
+  height: calc(19px);
+  width: 50%;
+  z-index: 1;
+}
+#clockMenu,
+#stopwatchMenu {
+  color: rgb(129, 114, 95);
+  display: inline-block;
+  font-size: calc(13px + 0.3vh);
+  width: 50%;
+  z-index: 2;
+  transition: 0.3s ease;
+}
+
+#localeClock {
+  color: #b3b3b3;
+
+  width: 90%;
+  height: 30%;
+  padding: 15px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.black {
+  color: black;
+}
+
+#day > div {
+  display: inline-block;
+}
+
+.TV {
+  font-size: 14vw;
+}
+
+.TV.num {
+  display: inline-block;
+  text-align: center;
+  width: 8vw;
+}
+
+.TV.colon {
+  font-weight: 300;
+  margin: 0 5px;
+}
+#timeVisual {
+  position: relative;
+  display: inline-block;
+}
+#timeVisual > span {
+  text-align: center;
+  line-height: 1;
+}
+#day {
+  display: inline-flex;
+  position: relative;
+  justify-content: space-evenly;
+  width: 90%;
+  font-size: 2vw;
+  margin-bottom: 0;
+}
+#ampm {
+  display: inline-block;
+  margin-left: 5%;
+  font-size: 2vw;
+}
+
+#stopwatch {
+  width: 100%;
+  height: 30%;
+  padding: 15px;
+
+  position: absolute;
+  top: 0;
+  bottom: 8%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+.digit {
+  display: inline-block;
+  text-align: center;
+  width: 7vw;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12vw;
+}
+.digit.colon {
+  width: 4vw;
+}
+#milliseconds1,
+#milliseconds2 {
+  font-weight: 600;
+  font-size: 5vw;
+  width: 3vw;
+  color: #b3b3b3;
+}
+
+#milliseconds1 {
+  margin-left: 15px;
+}
+#stopwatch-button {
+  width: 50%;
+  display: flex;
+  position: relative;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  justify-content: space-evenly;
+}
+#startBtn {
+  display: inline-block;
+  background-color: #ffd57c;
+  border: none;
+  box-shadow: 0px 1px 7px -3px #424242;
+  font-size: 1.5vw;
+  font-weight: 700;
+  padding-top: 2px;
+  width: 12vw;
+  height: 4vw;
+  border-radius: 12vw;
+  transition: 0.1s ease;
+}
+#startBtn:hover {
+  background-color: #ffe1a0;
+}
+#startBtn:active {
+  background-color: #ffd57c;
+}
+#resetBtn {
+  display: inline-block;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 1px 7px -3px #424242;
+  font-size: 1.5vw;
+  font-weight: 700;
+  padding-top: 2px;
+  width: 12vw;
+  height: 4vw;
+  border-radius: 12vw;
+  transition: 0.1s ease;
+}
+
+#resetBtn:hover {
+  background-color: #f1f1f1;
+}
+
+#resetBtn:active {
+  background-color: #e6e6e6;
+}

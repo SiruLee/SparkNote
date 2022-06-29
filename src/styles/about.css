@@ -1,0 +1,114 @@
+.box > svg {
+  display: block;
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  right: 0;
+  top: 0;
+  bottom: 20%;
+  left: 0;
+  margin: auto;
+}
+
+.box > img {
+  display: block;
+  position: absolute;
+  width: auto;
+  max-height: 65%;
+  max-width: 65%;
+  height: auto;
+  right: 0;
+  top: 0;
+  bottom: 20%;
+  left: 0;
+  margin: auto;
+}
+.box {
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 15px 0px rgba(117, 117, 117, 0.4);
+  border-radius: 20px;
+  padding-top: 1.5vw;
+  font-size: 3vh;
+}
+.box > div {
+  position: absolute;
+  font-weight: 400;
+  right: 0;
+  top: 80%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.xScroll {
+  display: grid;
+  grid-gap: 4%;
+  grid-template-columns: repeat(5, 25%);
+  grid-template-rows: minmax(100px, 1fr);
+  position: relative;
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  padding: 20px 4%;
+  bottom: 2%;
+}
+.xScroll::-webkit-scrollbar {
+  display: none;
+}
+#description {
+  margin: 3vh 3vw;
+  margin-top: 0;
+  color: #a1a1a1;
+  font-size: 2vh;
+  font-weight: 400;
+}
+.subject {
+  font-size: 4vh;
+  margin: 2vh 3vw;
+  font-weight: 300;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 50%;
+}
+
+#subject {
+  font-size: 5vh;
+  font-weight: 600;
+  color: white;
+  text-shadow: -3px 5px 3px #dbae32, 0 5px 5px #dbae32, 1px -1px 3px #dbae32,
+    -1px -1px 3px #dbae32;
+  margin-bottom: 1vh;
+}
+#author,
+#institution {
+  font-size: 3.5vh;
+  line-height: 1;
+  font-weight: 400;
+}
+
+#toGithub {
+  color: white;
+  background-color: black;
+  padding: 0.5vh 3vh;
+  border-radius: 5vh;
+  font-size: 3vh;
+  margin-top: 1vh;
+  margin-right: 20px;
+  font-weight: 500;
+  margin-bottom: 8vh;
+}
+
+#homepage {
+  background-color: white;
+  padding: 0.5vh 3vh;
+  border-radius: 5vh;
+  font-size: 3vh;
+  margin-top: 1vh;
+  margin-left: 0;
+  font-weight: 500;
+}

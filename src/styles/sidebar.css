@@ -1,0 +1,114 @@
+.sidebar-expanded {
+  position: fixed;
+  border-right: 2px #eeead6;
+  border-right-style: solid;
+  top: 30;
+  left: 0;
+  height: 100%;
+  width: 180px;
+  background: #fffdf3;
+  padding: 6px 14px;
+  color: #645a3f;
+}
+
+.sidebar-folded {
+  position: fixed;
+  border-right: 2px #eeead6;
+  border-right-style: solid;
+  top: 30;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background: #fffdf3;
+  padding: 6px 14px;
+  color: #645a3f;
+}
+
+.nav-folded .nav-item i {
+  margin-left: -10px;
+}
+#nav .nav-item i {
+  transition: 0.2s ease;
+}
+
+.tag {
+  background-color: #645a3f;
+  border-radius: 0 5px 5px 0;
+  position: fixed;
+  width: 6px;
+  left: 0px;
+  transition: 0.25s ease;
+}
+
+.tag-primary {
+  height: 8px;
+  margin: 20px 0px;
+}
+
+.tag-secondary {
+  height: 24px;
+  margin: 12px 0px;
+}
+
+#sidebar {
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+#sidebar ul {
+  margin-top: 10px;
+}
+
+#sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+#sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  list-style: none;
+  line-height: 50px;
+  border-radius: 10px;
+}
+#sidebar ul li:hover {
+  margin-left: 3px;
+  transition: 0.3s ease;
+}
+#sidebar ul li:not(:hover) {
+  transition: 0.3s ease;
+}
+
+#sidebar ul i {
+  height: 50px;
+  min-width: 45px;
+  border-radius: 12px;
+  line-height: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.expander.bx {
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  line-height: 32.5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 12px;
+  font-size: 25px;
+  transition: 0.2s ease;
+}
+#folded {
+  left: calc(100% - 38px);
+}
+
+#expanded {
+  left: calc(100% - 40px);
+  transform: scale(-1, 1);
+}
+
+#sidebar.sidebar-folded ~ .contents {
+  width: calc(100% - 50px);
+  left: 50px;
+}

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Charis+SIL:wght@400;700&display=swap");
+
+.note {
+  font-family: "Charis SIL", serif;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  padding: 5px;
+}
+.note:focus {
+  outline: none;
+}
+
+#sparkTitle {
+  width: calc(100% - 40px);
+  font-size: 30px;
+  font-weight: 700;
+  color: #2d2d2d;
+  border-bottom: 1px #cccccc solid;
+  padding-bottom: 1px;
+  margin: 5px 20px;
+  caret-color: #757575;
+}
+
+#sparkField {
+  width: calc(100% - 40px);
+  font-size: 18px;
+  font-weight: 400;
+  height: calc(100% - 70px);
+  box-sizing: border-box;
+  resize: none;
+  color: #646464;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#sparkField::-webkit-scrollbar {
+  width: 5px;
+}
+
+#sparkField::-webkit-scrollbar-thumb {
+  background: #645a3f;
+  border-radius: 8px;
+}
+
+#sparkField::-webkit-scrollbar-button {
+  display: none;
+}
+
+::selection {
+  color: white;
+  background: #645a3f;
+}

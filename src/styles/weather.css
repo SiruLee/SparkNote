@@ -1,0 +1,222 @@
+#weatherInfo * {
+  font-weight: 300;
+}
+#loading {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+#loadingContainer > i {
+  font-size: 1000%;
+}
+
+#loadingContainer > div {
+  font-size: 200%;
+}
+
+#loadingContainer {
+  color: #a5a5a5;
+}
+
+#error {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+#errorContainer > i {
+  font-size: 1500%;
+}
+
+#errorContainer > div {
+  font-size: 200%;
+}
+
+#errorContainer {
+  color: #a5a5a5;
+}
+#weatherInfo {
+  width: 100%;
+  height: 100%;
+  background: #f3f3f3;
+}
+
+#weatherContainer {
+  background: linear-gradient(#02243b 0%, #2077a0 100%);
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  border-radius: 20px;
+  width: 95%;
+  height: 95%;
+  padding: 0 3%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  box-shadow: 0px 0px 15px 5px #535353;
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+}
+
+#primary {
+  height: 23%;
+  display: flex;
+  flex-direction: row;
+}
+#weatherIcon {
+  display: inline-block;
+  width: 103px;
+  height: 100%;
+  position: relative;
+}
+#weatherIcon > img {
+  position: absolute;
+  opacity: 0.8;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  filter: brightness(2);
+}
+
+#temp {
+  height: 100%;
+  width: 30%;
+  font-size: 10vh;
+  font-weight: 500;
+  padding: 3.5vh 0;
+}
+#location {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  font-size: 6vh;
+  text-align: right;
+}
+
+#location > div {
+  margin: -10px 0;
+}
+#hl {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.8);
+}
+#weatherName {
+  position: relative;
+  font-size: 6vmax;
+  margin-top: 10px;
+}
+
+#secondary {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "aqi feel pressure"
+    "aqi humidity visibility";
+  gap: 3%;
+  padding: 1%;
+  flex: 1 1 auto;
+  margin-bottom: 3%;
+  margin-top: 1%;
+}
+.weatherModule {
+  position: relative;
+  background: rgba(18, 19, 20, 0.3);
+  border-radius: 15px;
+  padding: 5% 8%;
+  display: flex;
+  flex-direction: column;
+}
+.weatherTitle {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: 300 !important;
+  font-size: 3vh;
+  align-content: center;
+  color: white;
+}
+.weatherTitle > i {
+  font-size: 100%;
+
+  margin-right: 10px;
+}
+#aqi {
+  grid-area: aqi;
+}
+
+#feel {
+  grid-area: feel;
+}
+#pressure {
+  grid-area: pressure;
+}
+#humidity {
+  grid-area: humidity;
+}
+#visibility {
+  grid-area: visibility;
+}
+
+.infoBody {
+  font-weight: 500 !important;
+  color: white;
+  font-size: 4.5vh;
+}
+
+#tempBarContainer {
+  position: relative;
+  height: 100%;
+}
+#barCenter {
+  position: absolute;
+  height: 90%;
+  bottom: 0%;
+  width: 100%;
+}
+#tempBar {
+  position: absolute;
+  height: 100%;
+  bottom: 0%;
+  width: 10px;
+  right: 0;
+  border-radius: 100vw;
+  background: linear-gradient(
+    rgb(128, 0, 0) 0%,
+    red 10%,
+    yellow 40%,
+    rgb(0, 197, 0) 70%,
+    rgb(0, 81, 255) 100%
+  );
+}
+
+#circle {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  right: 0;
+  border-radius: 55%;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px 0 white;
+}
+
+.aqiMeter {
+  position: absolute;
+}
+#aqiMax {
+  top: 0%;
+  right: calc(15px + 3%);
+  font-size: 2.5vh;
+}
+
+#aqiMin {
+  bottom: -2%;
+  right: calc(15px + 3%);
+  font-size: 2.5vh;
+}
