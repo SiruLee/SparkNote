@@ -26,9 +26,11 @@ function About() {
           GitHub
         </button>
       </a>
-      <button className="subject" id="homepage">
-        Webpage
-      </button>
+      <a href="https://sirulee.github.io/" target="blank">
+        <button className="subject" id="homepage">
+          Webpage
+        </button>
+      </a>
       <div id="container">
         <div id="tools" className="subject">
           Languages & Tools
