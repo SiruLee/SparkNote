@@ -26,7 +26,7 @@ function About() {
           GitHub
         </button>
       </a>
-      <a href="https://sirulee.github.io\jiheon-lee" target="blank">
+      <a href="https://sirulee.github.io/jiheon-lee" target="blank">
         <button className="subject" id="homepage">
           Webpage
         </button>
