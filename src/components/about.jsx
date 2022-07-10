@@ -21,12 +21,12 @@ function About() {
       <div id="institution" className="subject">
         University of Toronto
       </div>
-      <a href="https://github.com/SiruLee" target="blank">
+      <a href="https://github.com/SiruLee" target="blank" id="aGit">
         <button className="subject" id="toGithub">
           GitHub
         </button>
       </a>
-      <a href="https://sirulee.github.io/jiheon-lee" target="blank">
+      <a href="https://sirulee.github.io/jiheon-lee" target="blank" id="aWeb">
         <button className="subject" id="homepage">
           Webpage
         </button>
