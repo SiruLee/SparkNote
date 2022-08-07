@@ -17,7 +17,6 @@ function Weather() {
   });
   const getData = async () => {
     try {
-      const time = new Date();
       const location = await axios.get("https://geolocation-db.com/json/");
       const weather = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?lat=${location.data.latitude}&lon=${location.data.longitude}&units=metric&appid=d5e739548ba76669ea591aea85dea424`
@@ -43,7 +42,7 @@ function Weather() {
 
   useEffect(() => {
     getData();
-  });
+  }, []);
 
   return (
     <div className="contents">
