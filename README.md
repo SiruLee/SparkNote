@@ -15,9 +15,14 @@ A one-month project for developing a multi-functional desktop application includ
 
 ### 2. Navigation
 
-![navigation](./images/navigation.png)
+<img align="left" height="300" src="./images/navigation.png">
 
 - A navigation bar through which users can explore various functions. It can also be folded to a list of icons.
+
+<br clear="left">
+<br>
+
+---
 
 ## Functionalities
 
